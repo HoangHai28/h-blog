@@ -21,7 +21,7 @@ export default function OAuth() {
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     name: resultsFromGoogle.user.displayName,
-                    email: resultsFromGoogle.user.gmail,
+                    email: resultsFromGoogle.user.email,
                     googlePhotoUrl: resultsFromGoogle.user.photoUrl,
                 }),
             })
